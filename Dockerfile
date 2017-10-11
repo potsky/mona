@@ -52,7 +52,7 @@ WORKDIR $HOME/MonaServer2/MonaTiny/www
 ADD ./runtime/home/ $HOME/
 ADD ./runtime/system/vimrc /root/.vimrc
 ADD ./runtime/system/motd /etc/motd
-ADD ./runtime/zsh_history /root/.zsh_history
+ADD ./runtime/system/zsh_history /root/.zsh_history
 
 ### Startup
 ADD ./runtime/scripts $STARTUPDIR

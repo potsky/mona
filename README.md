@@ -47,6 +47,6 @@
 	
 - In the docker image, run `ffmpeg -re -f lavfi -i testsrc=n=3 -vcodec libx264 -pix_fmt yuv420p -tune zerolatency -preset ultrafast -f flv rtmp://localhost/live/test`
 - Open <http://localhost:780/vod.html> on our computer for Rick (xo) 
-- Open <http://localhost:780/player/live.html> for live
-- Open <http://localhost:780/player/livejs.html> for ws live
+- Open <http://localhost:780/live.html> for live
+- Open <http://localhost:780/livejs.html> for ws live
 

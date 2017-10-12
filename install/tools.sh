@@ -28,6 +28,7 @@ apt-get install -y \
 		libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev \
 		nodejs \
 		git \
+		httpie \
 		xvfb
 
 apt-get clean -y

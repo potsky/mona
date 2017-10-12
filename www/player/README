@@ -1,6 +1,0 @@
-JS Player for Mona (low latency)
-1- download and build (just 'make', no config step) MonaServer2 => https://github.com/MonaSolutions/MonaServer2
-2- create a symbolic link from MonaPlayer folder in www folder of MonaTiny executable
-3- start MonaTiny
-4- publish a stream named "test"
-5- open "http://localhost/player/livejs.html?test" in your browser

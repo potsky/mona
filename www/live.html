@@ -1,5 +1,31 @@
-<html>
-<body>
-<video controls="true" autoplay="true" src="live.mp4"></video>
+<!DOCTYPE html>
+
+<head>
+</head>
+<body onload="load()">
+	<script type="text/javascript">
+		function load() {
+			var stream;
+			if(window.location.search) {
+				stream = window.location.search.substring(1);
+				var n = stream.indexOf("?")
+				var params;
+				if(n>=0) {
+					params = stream.substring(n);
+					stream = stream.substring(0,n);
+				} else
+					params = "";
+				if(stream.indexOf(".")==-1)
+					stream += ".mp4";
+				stream += params;
+			} else
+				stream = "test.mp4";
+			document.getElementById("video").src = window.location.origin + "/" + stream;
+		}
+	</script>
+  
+	<video id="video" controls autoplay="true">
+	Your browser does not support the video tag.
+	</video>
 </body>
 </html>
